@@ -2,6 +2,5 @@
 
 ## 0000 – Wed, 5 May
 
-Basic Hello World grid of circles using `canvas-sketch`.
-
-<img src="0000/renders/2021.05.05-20.15.12.png" width="100%" />
+<img src="0000/renders/01-basic-grid.png" width="50%" />
+<img src="0000/renders/02-random-grid-63543.png" width="50%" />
