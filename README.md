@@ -1,5 +1,34 @@
 # Generative Everday
 
-## 0000 – Wed, 5 May
+An ongoing project to try to create new generative art experiment(s) each day.
+
+### Resources
+
+[`canvas-sketch`](https://github.com/mattdesl/canvas-sketch) framework by [Matt DesLauriers](https://mattdesl.com/)
+
+### Contents
+
+- [0000](0000)
+
+## 0000
+
+#### Basic Grid
+
+- [multi-dimensional array of UV coordinates](https://github.com/mattdesl/workshop-generative-art/blob/master/docs/cheat-sheet.md#grids--uv-coordinates)
+- mapped to pixel values with [linear interpolation](https://github.com/mattdesl/workshop-generative-art/blob/master/docs/cheat-sheet.md#padding-with-margins-using-linear-interpolation).
+
+#### Random Grid
+
+- using [Random and seeds](https://github.com/mattdesl/canvas-sketch-util/blob/master/docs/random.md) technique to allow reproduceable randomness
+
+```js
+// You can force a specific seed by replacing this with a string value
+const defaultSeed = "";
+// Set a random seed so we can reproduce this print later
+Random.setSeed(defaultSeed || Random.getRandomSeed());
+// Print to console so we can see which seed is being used and copy it if desired
+console.log("Random Seed:", Random.getSeed());
+```
+
 
 <img src="0000/renders/01-basic-grid.png" width="50%" /><img src="0000/renders/02-random-grid-63543.png" width="50%" />

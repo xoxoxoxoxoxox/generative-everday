@@ -6,10 +6,8 @@ const settings = {
 };
 
 const sketch = () => {
-  // items in the grid
   const count = 18;
 
-  //  creates a u,v grid
   const createGrid = () => {
     const points = [];
     for (let x = 0; x < count; x++) {
