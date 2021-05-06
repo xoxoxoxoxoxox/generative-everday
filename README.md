@@ -30,5 +30,4 @@ random.setSeed(defaultSeed || random.getRandomSeed());
 console.log("Random Seed:", random.getSeed());
 ```
 
-<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0000/src/01-basic-grid.js"><img src="0000/renders/01-basic-grid.png" width="50%" /></a>
-<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0000/src/02-random-grid.js"><img src="0000/renders/02-random-grid-63543.png" width="50%" /></a>
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0000/src/01-basic-grid.js"><img src="0000/renders/01-basic-grid.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0000/src/02-random-grid.js"><img src="0000/renders/02-random-grid-63543.png" width="50%" /></a>
