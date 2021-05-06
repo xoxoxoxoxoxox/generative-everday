@@ -47,3 +47,9 @@ console.log('Palette: %s', JSON.stringify(palette));
 ```
 
 <a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0001/src/01-random-colors.js"><img src="0001/renders/01-random-colors-470002.png" width="50%" /><img src="0001/renders/01-random-colors-870559.png" width="50%" /><img src="0001/renders/01-random-colors-723962.png" width="50%" /><img src="0001/renders/01-random-colors-693223.png" width="50%" /></a>
+
+#### Alternating shapes
+
+- using methods to draw different shapes
+
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0001/src/02-alternating-shapes.js"><img src="0001/renders/02-alternating-shapes-124112.png" width="50%" /><img src="0001/renders/02-alternating-shapes-867879.png" width="50%" /></a>
