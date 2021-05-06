@@ -8,7 +8,7 @@ An ongoing project to try to create new generative art experiment(s) each day.
 
 ### Contents
 
-- [0000](0000)
+- [0000](#0000)
 
 ## 0000
 
@@ -19,15 +19,15 @@ An ongoing project to try to create new generative art experiment(s) each day.
 
 #### Random Grid
 
-- using [Random and seeds](https://github.com/mattdesl/canvas-sketch-util/blob/master/docs/random.md) technique to allow reproduceable randomness
+- using [Random with a Seed](https://github.com/mattdesl/canvas-sketch-util/blob/master/docs/random.md) technique to allow reproduceable randomness
 
 ```js
 // You can force a specific seed by replacing this with a string value
 const defaultSeed = "";
 // Set a random seed so we can reproduce this print later
-Random.setSeed(defaultSeed || Random.getRandomSeed());
+random.setSeed(defaultSeed || random.getRandomSeed());
 // Print to console so we can see which seed is being used and copy it if desired
-console.log("Random Seed:", Random.getSeed());
+console.log("Random Seed:", random.getSeed());
 ```
 
 

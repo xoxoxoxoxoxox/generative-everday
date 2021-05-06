@@ -1,25 +1,21 @@
 const canvasSketch = require('canvas-sketch');
 const { lerp } = require('canvas-sketch-util/math');
-const Random = require('canvas-sketch-util/random');
+const random = require('canvas-sketch-util/random');
 
 const defaultSeed = '';
 
-Random.setSeed(defaultSeed || Random.getRandomSeed());
-console.log('Random seed: %s', Random.getSeed());
+random.setSeed(defaultSeed || random.getRandomSeed());
+console.log('Random seed: %s', random.getSeed());
 
 const settings = {
   name: '02-random-grid',
   dimensions: [ 2048, 2048 ],
-  suffix: Random.getSeed()
+  suffix: random.getSeed()
 };
 
 const sketch = () => {
-  // items in the grid
-  const count = Random.rangeFloor(10, 25);
+  const count = random.rangeFloor(10, 25);
 
-  console.log(count);
-
-  //  creates a u,v grid
   const createGrid = () => {
     const points = [];
     for (let x = 0; x < count; x++) {
@@ -44,7 +40,7 @@ const sketch = () => {
       const x = lerp(margin, width - margin, u);
       const y = lerp(margin, height - margin, v);
 
-      const radius = Random.pick([10,20,30,40,50]);
+      const radius = random.pick([10,20,30,40,50]);
 
       context.fillStyle = 'white';
       context.beginPath();
