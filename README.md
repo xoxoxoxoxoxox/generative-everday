@@ -11,6 +11,7 @@ An ongoing project to try to create new generative art experiment(s) each day.
 #### References
 
 - [Creative coding algorithms & techniques](https://www.notion.so/Creative-coding-algorithms-techniques-c5550ef2f7574126bdc77b09ed76651b)
+- [Color arrangement in generative art](https://tylerxhobbs.com/essays/2021/color-arrangement-in-generative-art)
 
 #### Inspiration
 
@@ -20,6 +21,7 @@ An ongoing project to try to create new generative art experiment(s) each day.
 
 - [0000](#0000)
 - [0001](#0001)
+- [0002](#0002)
 
 ## 0000
 
