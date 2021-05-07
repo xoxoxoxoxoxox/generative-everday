@@ -73,7 +73,7 @@ console.log('Palette: %s', JSON.stringify(palette));
 - [Circle packing](https://generativeartistry.com/tutorials/circle-packing/)
 - [Random circle packing](http://jdobr.es/blog/algorithmic-art-circle-pack/#)
 
-<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/02-circle-packing.js"><img src="0002/renders/02-alternating-shapes-124112.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/03-circle-packing-round.js"><img src="0002/renders/03-circle-packing-round-747595.png" width="50%" /></a>
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/02-circle-packing.js"><img src="0002/renders/02-circle-packing-6840.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/03-circle-packing-round.js"><img src="0002/renders/03-circle-packing-round-747595.png" width="50%" /></a>
 
 
 - [Flow fields](https://www.bit-101.com/blog/2017/10/flow-fields-part-i/)
