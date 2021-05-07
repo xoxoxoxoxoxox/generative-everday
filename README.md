@@ -30,7 +30,7 @@ An ongoing project to try to create new generative art experiment(s) each day.
 
 #### Random Grid
 
-- using [Random with a Seeds](https://github.com/mattdesl/canvas-sketch-util/blob/master/docs/random.md) technique to allow reproduceable randomness
+- Uses [Random with a Seeds](https://github.com/mattdesl/canvas-sketch-util/blob/master/docs/random.md) technique to allow reproduceable randomness
 
 ```js
 // You can force a specific seed by replacing this with a string value
@@ -47,7 +47,7 @@ console.log("Random Seed:", random.getSeed());
 
 #### Random Colors
 
-- using [Nice color palettes](https://github.com/Jam3/nice-color-palettes) to randomly pick a complimentary palette
+- Uses [Nice color palettes](https://github.com/Jam3/nice-color-palettes) to randomly pick a complimentary palette
 
 ```js
 let palette = random.pick(palettes);
@@ -67,9 +67,18 @@ console.log('Palette: %s', JSON.stringify(palette));
 
 ## 0002
 
+#### Blending Colors
+
+- Uses [color interpolate](https://github.com/colorjs/color-interpolate)
+- TODO: look into replacing library with custom code
+- TODO: [Perceptually Smooth Multi-Color Linear Gradients](https://observablehq.com/@mattdesl/perceptually-smooth-multi-color-linear-gradients)
+- TODO: [Spline Gradient by @mattdesl](https://gist.github.com/mattdesl/2a7b2013492cbcbafc797d3f9164e92c)
+
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/01-blending-colors.js"><img src="0002/renders/01-blending-colors-666328.png" width="50%" /><img src="0002/renders/01-blending-colors-835112.png" width="50%" /></a>
+
 #### Circle Packing
 
-- Uses [Pack spheres](https://github.com/mattdesl/pack-spheres)
+- Uses [pack spheres](https://github.com/mattdesl/pack-spheres)
 - [Circle packing](https://generativeartistry.com/tutorials/circle-packing/)
 - [Random circle packing](http://jdobr.es/blog/algorithmic-art-circle-pack/#)
 
