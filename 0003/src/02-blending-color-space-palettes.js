@@ -127,7 +127,11 @@ const sketch = async ({ width, height }) => {
       }
 
       for (let c = 0; c < colors.length; c++) {
-        context.fillStyle = culori.formatHex(colors[c].value);
+
+        let color = colors[c].value;
+
+        color = culori.formatRgb(color);
+        context.fillStyle = color
         context.fillRect(x - Math.ceil(w/2), Math.ceil(c * height/colors.length), Math.ceil(w), Math.ceil(height/colors.length) - 80);
 
         // Add text

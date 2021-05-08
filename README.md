@@ -90,8 +90,9 @@ console.log('Palette: %s', JSON.stringify(palette));
 
 - Uses [Colori](https://culorijs.org/) for interpolation and color spaces
 - Uses [Nice color palettes](https://github.com/Jam3/nice-color-palettes) to test color space interpolation with different color palettes
+- Using spline can break the interpolation values (see example 812765)
 
-<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0003/src/01-blending-color-space.js"><img src="0003/renders/01-blending-color-space.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0003/src/01-blending-color-space-palettes.js"><img src="0003/renders/02-blending-color-space-palettes-227794.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-299403.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-596682.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-812765.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-828946.png" width="50%" /></a>
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0003/src/01-blending-color-space.js"><img src="0003/renders/01-blending-color-space.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0003/src/01-blending-color-space-palettes.js"><img src="0003/renders/02-blending-color-space-palettes-220300.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-299403.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-596682.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-812765.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-828946.png" width="50%" /></a>
 
 # Future ideas
 
