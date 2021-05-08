@@ -3,13 +3,13 @@ const { lerp } = require('canvas-sketch-util/math');
 const culori = require('culori');
 
 const settings = {
-  name: '01-blending-oklab',
+  name: '01-blending-color-space',
   dimensions: [ 2048, 2048 ]
 };
 
-const sketch = ({ width, height }) => {
+const sketch = async ({ width, height }) => {
   const background = 'hsl(0, 0%, 06%)';
-  const steps = 200;
+  const steps = width;
   const margin = Math.ceil((width/steps)/2);
 
   const colorArray = ['red', 'green', 'blue', 'purple', 'red'];
@@ -40,13 +40,34 @@ const sketch = ({ width, height }) => {
     for (let i = 0; i < steps; i++) {
       const u = i / (steps - 1);
       const colors = [
-        interpolationRGB(u),
-        interpolationOklab(u),
-        interpolationHsl(u),
-        interpolationLch(u),
-        interpolationLchBasis(u),
-        interpolationLchNatural(u),
-        interpolationLchMonotone(u)
+        {
+          name: 'a) linear RGB color space',
+          value: interpolationRGB(u)
+        },
+        {
+          name: 'b) OKLAB color space',
+          value: interpolationOklab(u)
+        },
+        {
+          name: 'c) HSL color space',
+          value: interpolationHsl(u)
+        },        
+        {
+          name: 'd) CIELCh color space',
+          value: interpolationLch(u)
+        },        
+        {
+          name: 'e) CIELCh color space with basis spline',
+          value: interpolationLchBasis(u)
+        },         
+        {
+          name: 'f) CIELCh color space with natural spline',
+          value: interpolationLchNatural(u)
+        }, 
+        {
+          name: 'g) CIELCh color space with monotone spline',
+          value: interpolationLchMonotone(u)
+        }
       ];
       bands.push({
         u,
@@ -58,6 +79,20 @@ const sketch = ({ width, height }) => {
   }
 
   const bands = createBands();
+
+  // We can use Browser's "FontFace" API to load fonts from JavaScript
+  // This will ensure the font is renderable before first drawing to Canvas
+  const fontUrl = 'assets/fonts/SourceCodePro-Regular.ttf';
+  const font = new window.FontFace(
+    'SourceCodePro',
+    `url(${fontUrl})`
+  );
+
+  // We use async/await ES6 syntax to wait for the font to load
+  await font.load();
+
+  // Add the loaded font to the document
+  document.fonts.add(font);
 
   return ({ context, width, height }) => {
     context.fillStyle = background;
@@ -77,11 +112,17 @@ const sketch = ({ width, height }) => {
         w = width / steps;
         x = lerp(margin, width - margin, u);
       }
-;
 
       for (let c = 0; c < colors.length; c++) {
-        context.fillStyle = culori.formatHex(colors[c]);
+        context.fillStyle = culori.formatHex(colors[c].value);
         context.fillRect(x - Math.ceil(w/2), Math.ceil(c * height/colors.length), Math.ceil(w), Math.ceil(height/colors.length) - 80);
+
+        // Add text
+        context.fillStyle = 'white';
+        context.font = `40px "SourceCodePro"`;
+        context.textAlign = 'left';
+        context.textBaseline = 'top';
+        context.fillText(colors[c].name, 20 , Math.ceil((c + 1) * height/colors.length) - 58);
       }  
     })
   };
