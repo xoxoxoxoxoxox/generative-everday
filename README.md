@@ -72,9 +72,6 @@ console.log('Palette: %s', JSON.stringify(palette));
 #### Blending Colors
 
 - Uses [color interpolate](https://github.com/colorjs/color-interpolate)
-- TODO: look into replacing library with custom code
-- TODO: [Perceptually Smooth Multi-Color Linear Gradients](https://observablehq.com/@mattdesl/perceptually-smooth-multi-color-linear-gradients)
-- TODO: [Spline Gradient by @mattdesl](https://gist.github.com/mattdesl/2a7b2013492cbcbafc797d3f9164e92c)
 
 <a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/01-blending-colors.js"><img src="0002/renders/01-blending-colors-666328.png" width="50%" /><img src="0002/renders/01-blending-colors-835112.png" width="50%" /></a>
 
@@ -87,5 +84,16 @@ console.log('Palette: %s', JSON.stringify(palette));
 <a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/02-circle-packing.js"><img src="0002/renders/02-circle-packing-6840.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0002/src/03-circle-packing-round.js"><img src="0002/renders/03-circle-packing-round-747595.png" width="50%" /></a>
 
 
+# Future ideas
+
+### Continue from 0002 Blending Colors
+
+- look into replacing library with custom code
+- [Perceptually Smooth Multi-Color Linear Gradients](https://observablehq.com/@mattdesl/perceptually-smooth-multi-color-linear-gradients)
+- [Spline Gradient by @mattdesl](https://gist.github.com/mattdesl/2a7b2013492cbcbafc797d3f9164e92c)
+
 - [Flow fields](https://www.bit-101.com/blog/2017/10/flow-fields-part-i/)
 - [2d vector fields](https://muffinman.io/blog/neon-generative-art-piece-made-using-2d-vector-field/)
+
+- [Watercolor Effects](https://tylerxhobbs.com/essays/2020/how-to-hack-a-painting)
+- [Delaunay Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation)
