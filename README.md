@@ -22,6 +22,8 @@ An ongoing project to try to create new generative art experiment(s) each day.
 - [0000](#0000)
 - [0001](#0001)
 - [0002](#0002)
+- [0003](#0003)
+- [0004](#0004)
 
 ## 0000
 
@@ -94,6 +96,14 @@ console.log('Palette: %s', JSON.stringify(palette));
 
 <a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0003/src/01-blending-color-space.js"><img src="0003/renders/01-blending-color-space.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0003/src/01-blending-color-space-palettes.js"><img src="0003/renders/02-blending-color-space-palettes-220300.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-299403.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-596682.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-812765.png" width="50%" /><img src="0003/renders/02-blending-color-space-palettes-828946.png" width="50%" /></a>
 
+# 0004
+
+### Basic noise
+
+- Uses `random.noise2D`
+
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/01-basic-noise.js"><img src="0004/renders/01-basic-noise-68420.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/02-color-noise.js"><img src="0004/renders/02-color-noise-790933.png" width="50%" /></a>
+
 # Future ideas
 
 ### Continue from 0002 Blending Colors
@@ -104,6 +114,8 @@ console.log('Palette: %s', JSON.stringify(palette));
 
 - [Flow fields](https://www.bit-101.com/blog/2017/10/flow-fields-part-i/)
 - [2d vector fields](https://muffinman.io/blog/neon-generative-art-piece-made-using-2d-vector-field/)
+
+- Use the 3D sphere packing from [Circle Packing](#circle-packing) with a long cube/tube and render frames. Try to find a matching image to make a single long looping animation
 
 - [Watercolor Effects](https://tylerxhobbs.com/essays/2020/how-to-hack-a-painting)
 - [Delaunay Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation)
