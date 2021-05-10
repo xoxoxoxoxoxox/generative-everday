@@ -102,7 +102,7 @@ console.log('Palette: %s', JSON.stringify(palette));
 
 - Uses `random.noise2D`
 
-<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/01-basic-noise.js"><img src="0004/renders/01-basic-noise-68420.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/02-color-noise.js"><img src="0004/renders/02-color-noise-790933.png" width="50%" /></a>
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/01-basic-noise.js"><img src="0004/renders/01-basic-noise-292225.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/02-color-noise.js"><img src="0004/renders/02-color-noise-790933.png" width="50%" /></a>
 
 # Future ideas
 
