@@ -24,6 +24,7 @@ An ongoing project to try to create new generative art experiment(s) each day.
 - [0002](#0002)
 - [0003](#0003)
 - [0004](#0004)
+- [0005](#0005)
 
 ## 0000
 
@@ -103,6 +104,14 @@ console.log('Palette: %s', JSON.stringify(palette));
 - Uses `random.noise2D`
 
 <a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/01-basic-noise.js"><img src="0004/renders/01-basic-noise-292225.png" width="50%" /></a><a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0004/src/02-color-noise.js"><img src="0004/renders/02-color-noise-790933.png" width="50%" /></a>
+
+# 0005
+
+### Random Characters and sizes
+
+- Uses `random.noise2D` and `random.insideCircle`
+
+<a href="https://github.com/xoxoxoxoxoxox/generative-everday/blob/master/0005/src/sketch.js"><img src="0005/renders/quiz-436610.png" width="50%" /><img src="0005/renders/quiz-800438.png" width="50%" /></a>
 
 # Future ideas
 
